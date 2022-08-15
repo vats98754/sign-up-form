@@ -1,0 +1,126 @@
+@font-face {
+    font-family: 'Norse-Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Norse-Bold'), url('assets/Norse-Bold.otf') format('truetype');
+}
+
+:root {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    --green: #596D48;
+    --white: #f0f0f0;
+}
+
+body {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    overflow: hidden;
+}
+
+button {
+    background-color: var(--green);
+    color: var(--white);
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 10px;
+    border: 2px solid white;
+    padding: 15px 30px 15px 30px;
+}
+
+label {
+    font-weight: 200;
+    font-size: smaller;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"] {
+    border: 2px solid var(--white);
+    border-radius: 5px;
+}
+
+p {
+    color: rgb(65, 65, 65);
+    font-weight: 300;
+    font-size: 20px;
+}
+
+a {
+    text-decoration: none;
+    font-weight: 700;
+    color: lightgreen;
+}
+
+.left,
+.right {
+    display: flex;
+    flex-direction: column;
+}
+
+.left {
+    display: flex;
+    width: 40vw;
+    align-items: center;
+}
+.right {
+    position: relative;
+    width: 100% - 40vw;
+    background-color: var(--white);
+}
+
+.top-right,
+.mid-right,
+.bottom-right {
+    padding-left: 5vw;
+    padding-right: 15vw;
+    position: relative;
+}
+
+.top-right {
+    top: 10vh;
+}
+
+.mid-right {
+    top: 10vh;
+    font-family: 'Comic Sans';
+    background-color: white;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.bottom-right {
+    top: 15vh;
+}
+
+#rainforest {
+    height: 100vh;
+    position: relative;
+}
+
+.overlayed-banner {
+    display: flex;
+    position: fixed;
+    height: 15vh;
+    left: 0;
+    top: 20%;
+    background-color: black;
+}
+
+.overlayed-text {
+    font-family: 'Norse-Bold';
+    color: white;
+}
+
+.photo-credits {
+    align-items: center;
+    position: fixed;
+    color: white;
+    bottom: 10px;
+}
+
+#login-link {
+    color: var(--green);
+}
