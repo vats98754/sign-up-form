@@ -15,7 +15,7 @@
         </div>
         <div class="overlayed-banner">
             <img src="assets/odin-lined.png" alt="The Odin Project outlined logo" id="odin-outline">
-            <div class="overlayed-text">ODIN</div>
+            <div id="overlayed-text">ODIN</div>
         </div>
         <div class="photo-credits">
             Photo by <a>Joe Mama</a> on <a>Deez</a>
@@ -31,33 +31,40 @@
                 You <em>know</em> you want to.
             </p>
         </div>
-        <form action="#" method="get">
+        <form action="#" method="get" id="registration-form">
             <div class="mid-right">
                 <p>Let's do this!</p>
-                <div>
-                    <label for="firstname">FIRST NAME</label>
-                    <input type="text" name="firstname" id="firstname">
-                </div>
-                <div>
-                    <label for="lastname">LAST NAME</label>
-                    <input type="text" name="lastname" id="lastname">
-                </div>
-                <div>
-                    <label for="email">EMAIL</label>
-                    <input type="email" name="email" id="email">
-                </div>
-                <div>
-                    <label for="phone_number">PHONE NUMBER</label>
-                    <input type="tel" name="phone_number" id="phone_number">
-                </div>
-                <div>
-                    <label for="password">PASSWORD</label>
-                    <input type="password" name="password" id="password" required>
-                </div>
-                <div>
-                    <label for="confirm_password">CONFIRM PASSWORD</label>
-                    <input type="password" name="confirm_password" id="confirm_password" required>
-                </div>
+                <fieldset>
+                    <span>
+                        <label for="firstname">FIRST NAME</label>
+                        <input type="text" name="firstname" id="firstname">
+                    </span>
+                    <span>
+                        <label for="lastname">LAST NAME</label>
+                        <input type="text" name="lastname" id="lastname">
+                    </span>
+                </fieldset>
+                <fieldset>
+                    <span>
+                        <label for="email">EMAIL</label>
+                        <input type="email" name="email" id="email">
+                    </span>
+                    <span>
+                        <label for="phone_number">PHONE NUMBER</label>
+                        <input type="tel" name="phone_number" id="phone_number">
+                    </span>
+                </fieldset>
+                <fieldset id="pwd-validation">
+                    <span>
+                        <label for="password">PASSWORD</label>
+                        <input type="password" name="password" id="password" class="error" required>
+                        <div id="error-msg">*Passwords do not match</div>
+                    </span>
+                    <span>
+                        <label for="confirm_password">CONFIRM PASSWORD</label>
+                        <input type="password" name="confirm_password" id="confirm_password" class="error" required>
+                    </span>
+                </fieldset>
             </div>
             <div class="bottom-right">
                 <button type="submit" id="create-account">Create Account</button>
